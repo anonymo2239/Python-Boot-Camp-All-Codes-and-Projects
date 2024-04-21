@@ -1,0 +1,54 @@
+body, html {
+    height: 85%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#image1 {
+    width: 320px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#searchbar {
+    font-size: large;
+    border: 1px lightgray solid;
+    border-radius: 20cap;
+    width: 600px;
+    height: 48px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center; /* Düğmeleri merkezler */
+}
+
+#ara {
+    font-size: 90%;
+    background-color: #f8f9fa;
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 130px;
+    height: 35px;
+    margin: 8px;
+    margin-top: 33px;
+}
+
+#ifeellucky {
+    font-size: 90%;
+    background-color: #f8f9fa;
+    border: 1px white solid;
+    border-radius: 5px;
+    width: 225px;
+    height: 35px;
+    margin-top: 33px;
+}

@@ -1,44 +1,50 @@
+/* h2: Metin rengi crimson, arka plan rengi siyah */
 h2 {
     color:crimson;
     background-color: black;
 }
 
+/* h3: Metin rengi blueviolet */
 h3 {
     color: blueviolet;
 }
 
+/* p: Metin rengi chocolate */
 p {
     color: chocolate;
 }
 
+/* .firstdiv: Arka plan rengi chartreuse CLASS'LARDA . kullanılır */
 .firstdiv {
     background-color: chartreuse;
 }
 
+/* #myparagraph: Metin rengi siyah */
 #myparagraph {
-    color:black
+    color:black;
 }
 
+/* div: Arka plan rengi siyah */
 div {   
     background-color: black;
 }
 
+/* span: Arka plan rengi royalblue */
 span {
     background-color: royalblue;
 }
 
+/* h1: Metin rengi beyaz */
 h1 {
     color: white;
 }
 
+/* h4: Metin rengi aliceblue */
 h4 {
-    color:aliceblue
-}
-
-#secondparagraph {
     color:aliceblue;
 }
 
-.seconddiv{
-    background-color: crimson;
+/* #secondparagraph: Metin rengi aliceblue ID lerde # kullanılırır*/ 
+#secondparagraph {
+    color:aliceblue;
 }
