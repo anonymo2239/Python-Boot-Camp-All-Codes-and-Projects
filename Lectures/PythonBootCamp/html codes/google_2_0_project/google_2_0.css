@@ -16,20 +16,23 @@ form {
 #image1 {
     width: 320px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
 }
 
 #searchbar {
     font-size: large;
-    border: 1px lightgray solid;
-    border-radius: 20cap;
-    width: 600px;
-    height: 48px;
+    border: 1px white solid;
+    width: 400px;
+    height: 30px;
+    margin-top: 4px;
+    align-self: flex-start;
+    margin-left: -45px;
+    outline: none;
 }
 
 #buttons {
     display: flex;
-    justify-content: center; /* Düğmeleri merkezler */
+    justify-content: center;
 }
 
 #ara {
@@ -40,7 +43,7 @@ form {
     width: 130px;
     height: 35px;
     margin: 8px;
-    margin-top: 33px;
+    margin-top: 10px;
 }
 
 #ifeellucky {
@@ -50,5 +53,5 @@ form {
     border-radius: 5px;
     width: 225px;
     height: 35px;
-    margin-top: 33px;
+    margin-top: 10px;
 }
