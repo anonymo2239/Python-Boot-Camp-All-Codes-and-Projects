@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +7,7 @@
     <title>Yeni Sekme</title>
 </head>
 <body>
-    <form action="">
+    <form onsubmit="return false;">
         <img src="gulcem.png" id="image1" alt="Google">
         <div style="position: relative;">
             <img src="dimbillen.png" id="image2" alt="searchbarImage">
@@ -16,6 +17,19 @@
             <button id="ara">Google'da Ara</button>
             <button id="ifeellucky">Kendimi Şanslı Hissediyorum</button>
         </div>
+        <div id="bottomLine"></div>
     </form>
+    
+    <script>
+        document.getElementById("ara").onclick = function() {
+            var searchTerm = document.getElementById("searchbar").value;
+            window.open("https://www.google.com/search?q=" + encodeURIComponent(searchTerm));
+        };
+
+        document.getElementById("ifeellucky").onclick = function() {
+            var searchTerm = document.getElementById("searchbar").value;
+            window.open("https://www.google.com/search?btnI=1&q=" + encodeURIComponent(searchTerm));
+        };
+    </script>
 </body>
 </html>
