@@ -3,17 +3,6 @@
 import os
 import sys
 
-# Django, web uygulamalarını hızlı ve verimli bir şekilde geliştirmek için kullanabileceğiniz bir yazılımdır.
-
-# django-admin startproject django_learning_project komutu Django'da yeni bir proje oluşturmak için kullanılır. Bu komut, Django projesi için gerekli olan dosyaları ve klasörleri oluşturur.
-# manage.py dosyası, Django projesiyle etkileşimde bulunmak için kullanılan bir komut satırı aracıdır. manage.py dosyası, Django projesinin yönetim görevlerini gerçekleştirmek için kullanılır.
-
-# python manage.py runserver komutu, Django projesini çalıştırmak için kullanılır. Bu komut, Django projesini yerel bir sunucuda çalıştırır ve projenin çalıştığı URL'yi gösterir.
-# python manage.py runserver yazdığımızda http://127.0.0.1:8000/ adresine giderek projemizi görebiliriz. Bu bizim web sitesi adresimizdir. Sunucu çalıştığı sürece bu adrese giderek projemizi görebiliriz.
-
-# Bir projenin içinde birden fazla app olabilir. Django'da bir app oluşturmak için python manage.py startapp app_adı komutunu kullanabiliriz.
-# Sadece bir app in içinde de çalışabiliriz veya sonradan birden fazla app oluşturabiliriz. Django bu yüzden scalable bir yapıya sahiptir.
-
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_learning_project.settings')
