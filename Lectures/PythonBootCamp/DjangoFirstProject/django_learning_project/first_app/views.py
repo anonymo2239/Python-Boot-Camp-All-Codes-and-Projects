@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, Http404, HttpResponseNotFound, HttpResponseRedirect
+from django.urls import reverse
 
 # dynamic routing
 course_dictionary = {
@@ -27,6 +28,19 @@ def courses(request, item):
 def multiply_view(request, num1, num2): # briefly we can take parameter from user and add to url
     return HttpResponse(f"{num1} * {num2} = {num1 * num2}")
 
+# redirect = yonlendirmek 
+# enn düzgün hali
+# 1) dict'ten keyler alındı ve liste haline getirildi.
+# 2) reverse komutu kullanıldı(isimden fonksiyona gidildi) ve parametre unutulmadı
+# 3) HttpResponseRedirect kullanıldı
+# 4) try-except ile beraber HttpResponseNotFound("Not Found! Please look for another course.") kullanıldı
+
 def course_number_view(request, num1):
-    if num1 == 10:
-        return HttpResponseRedirect("kotlin")
+    course_list = list(course_dictionary.keys())
+    try:
+        course = course_list[num1]
+        page_to_go = reverse("kurs", args=[course])
+        return HttpResponseRedirect(page_to_go)
+    except:
+        return HttpResponseNotFound("Not Found! Please look for another course.")
+    
