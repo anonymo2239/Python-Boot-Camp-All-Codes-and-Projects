@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <h1>Weather Report</h1>
+    <!--Jinja Syntax-->
+    <h2>Istanbul: {{Istanbul}}</h2>
+    <br>
+    <h2>Amsterdam: {{Amsterdam}}</h2>
+    <br>
+    <h2>Rome</h2>
+    <h3>Morning: {{Rome.Morning}}</h3>
+    <h3>Evening: {{Rome.Evening}}</h3>
+    
+    {% for key, value in Rome.items %}
+        <h2><li>Rome {{key}}->{{value}}</li></h2>
+    {% endfor %}
+        
+    <h2>Paris:</h2>
+    
+    {% if User_premium %}
+        {% for item in Paris %}
+            {% if item <= 5 %}
+                <h2><li>Paris too cold</li></h2>
+            {% else %}
+                <h2><li>{{item}}</li></h2>
+            {% endif %}
+        {% endfor %}
+    {% endif %}    
+</body>
+</html>
